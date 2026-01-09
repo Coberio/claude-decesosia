@@ -1,0 +1,8 @@
+Este directorio debe contener el archivo DIU-DecesosIA.pdf
+
+Para añadir el documento DIU:
+1. Convierte el archivo "DIU - DECESOSIA.docx" a PDF
+2. Renómbralo como "DIU-DecesosIA.pdf"
+3. Colócalo en esta carpeta (docs/)
+
+El enlace de descarga en la web apunta a: docs/DIU-DecesosIA.pdf
