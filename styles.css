@@ -2,12 +2,12 @@
 
 :root {
     --color-bg: #FAFAFA;
-    --color-bg-alt: #F2F2F2;
+    --color-bg-alt: #F0F0F0;
     --color-text: #1A1A1A;
     --color-text-secondary: #666666;
-    --color-accent: #1B4D3E;
-    --color-accent-light: #2A6B57;
-    --color-border: #E0E0E0;
+    --color-accent: #1A1A1A;
+    --color-accent-light: #333333;
+    --color-border: #D0D0D0;
     --color-white: #FFFFFF;
 
     --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -160,14 +160,14 @@ a:hover {
 }
 
 .nav-diu {
-    background: var(--color-accent);
+    background: #1A1A1A;
     color: var(--color-white) !important;
     padding: 0.5rem 1rem;
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 .nav-diu:hover {
-    background: var(--color-accent-light);
+    background: #333333;
     color: var(--color-white) !important;
 }
 
@@ -223,7 +223,7 @@ a:hover {
 
 .btn-primary {
     display: inline-block;
-    background: var(--color-accent);
+    background: #1A1A1A;
     color: var(--color-white);
     padding: 1rem 2.5rem;
     font-size: 0.9rem;
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: var(--color-accent-light);
+    background: #333333;
     color: var(--color-white);
 }
 
@@ -249,7 +249,7 @@ a:hover {
 
 .coverage-block h3 {
     font-size: 1.25rem;
-    color: var(--color-accent);
+    color: var(--color-text);
     padding-bottom: var(--spacing-sm);
     border-bottom: 1px solid var(--color-border);
     margin-bottom: var(--spacing-md);
@@ -295,7 +295,7 @@ a:hover {
 
 .feature h4 {
     margin-bottom: var(--spacing-xs);
-    color: var(--color-accent);
+    color: var(--color-text);
 }
 
 .feature p {
@@ -332,7 +332,7 @@ a:hover {
     font-family: var(--font-serif);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-text);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -344,7 +344,7 @@ a:hover {
 
 /* DIU Section */
 .section-diu {
-    background: var(--color-accent);
+    background: #1A1A1A;
     color: var(--color-white);
     padding: var(--spacing-xl) 0;
 }
@@ -454,7 +454,7 @@ a:hover {
 .btn-download {
     display: inline-block;
     background: var(--color-white);
-    color: var(--color-accent);
+    color: #1A1A1A;
     padding: 1rem 2.5rem;
     font-size: 0.9rem;
     font-weight: 500;
@@ -464,8 +464,8 @@ a:hover {
 }
 
 .btn-download:hover {
-    background: var(--color-bg-alt);
-    color: var(--color-accent);
+    background: #E0E0E0;
+    color: #1A1A1A;
 }
 
 .diu-contact {
@@ -685,7 +685,7 @@ a:hover {
     font-size: 1.5rem;
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
-    color: var(--color-accent);
+    color: var(--color-text);
 }
 
 .legal-content h2:first-of-type {
@@ -715,7 +715,7 @@ a:hover {
     background: var(--color-bg-alt);
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
-    border-left: 3px solid var(--color-accent);
+    border-left: 3px solid var(--color-text);
 }
 
 .legal-entity h4 {
@@ -735,6 +735,6 @@ a:hover {
 }
 
 .legal-contact h3 {
-    color: var(--color-accent);
+    color: var(--color-text);
     margin-bottom: var(--spacing-sm);
 }
