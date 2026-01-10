@@ -1,24 +1,53 @@
-// DecesosIA - Minimal JavaScript
+// DecesosIA - Editorial Interactions
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Accordion functionality
-    const accordionItems = document.querySelectorAll('.accordion-item');
+document.addEventListener('DOMContentLoaded', () => {
+    // Scroll animations with Intersection Observer
+    const animateElements = document.querySelectorAll('.animate-in');
 
-    accordionItems.forEach(item => {
-        const header = item.querySelector('.accordion-header');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 0.1
+    };
 
-        header.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-
-            // Close all items
-            accordionItems.forEach(i => i.classList.remove('active'));
-
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                item.classList.add('active');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Stagger animations within the same section
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, delay * 100);
+                observer.unobserve(entry.target);
             }
         });
+    }, observerOptions);
+
+    // Add stagger delay to elements
+    animateElements.forEach((el, index) => {
+        // Find siblings to create stagger effect
+        const parent = el.parentElement;
+        const siblings = parent.querySelectorAll('.animate-in');
+        const siblingIndex = Array.from(siblings).indexOf(el);
+        el.dataset.delay = siblingIndex;
+        observer.observe(el);
     });
+
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    }, { passive: true });
 
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
@@ -30,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             menuToggle.classList.toggle('active');
         });
 
-        // Close menu when clicking a link
+        // Close menu on link click
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -58,19 +87,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Header scroll effect
-    const header = document.querySelector('.header');
-    let lastScroll = 0;
+    // Parallax effect on hero (subtle)
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
 
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
+    if (hero && heroContent) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroHeight = hero.offsetHeight;
 
-        if (currentScroll > 100) {
-            header.style.boxShadow = '0 1px 10px rgba(0, 0, 0, 0.05)';
-        } else {
-            header.style.boxShadow = 'none';
-        }
+            if (scrolled < heroHeight) {
+                const opacity = 1 - (scrolled / heroHeight) * 0.5;
+                const translateY = scrolled * 0.3;
+                heroContent.style.opacity = opacity;
+                heroContent.style.transform = `translateY(${translateY}px)`;
+            }
+        }, { passive: true });
+    }
 
-        lastScroll = currentScroll;
-    });
+    // Animate hero elements on load
+    setTimeout(() => {
+        document.querySelectorAll('.hero .animate-in').forEach((el, index) => {
+            setTimeout(() => {
+                el.classList.add('visible');
+            }, index * 150);
+        });
+    }, 100);
 });

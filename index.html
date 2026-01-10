@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DecesosIA - Inteligencia Artificial al servicio del seguro de decesos. Único proyecto aprobado para el Sandbox Financiero español 2025.">
-    <meta name="keywords" content="DecesosIA, seguro de decesos, sandbox financiero, DGSFP, inteligencia artificial, seguros">
-    <title>DecesosIA | Inteligencia Artificial al servicio del seguro de decesos</title>
+    <title>DecesosIA | El futuro del seguro de decesos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Grain overlay -->
+    <div class="grain"></div>
+
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo">DecesosIA</a>
+            <a href="#" class="logo">
+                <span class="logo-text">Decesos</span><span class="logo-accent">IA</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="#que-es-decesos">El Seguro</a></li>
-                <li><a href="#que-es-decesosia">DecesosIA</a></li>
+                <li><a href="#propuesta">Propuesta</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
                 <li><a href="#sandbox">Sandbox</a></li>
-                <li><a href="#diu" class="nav-diu">DIU</a></li>
+                <li><a href="#diu" class="nav-highlight">DIU</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Menú">
                 <span></span>
@@ -29,249 +33,270 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>DecesosIA</h1>
-            <p class="hero-subtitle">Inteligencia Artificial al servicio del seguro de decesos</p>
-            <p class="hero-text">El único proyecto aprobado para el Sandbox Financiero español 2025.<br>Supervisado por la DGSFP.</p>
-            <a href="#que-es-decesos" class="btn-primary">Conocer más</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-eyebrow animate-in">Sandbox Financiero 2025</p>
+                <h1 class="hero-title animate-in">
+                    <span class="title-line">Inteligencia</span>
+                    <span class="title-line">Artificial al</span>
+                    <span class="title-line"><em>servicio</em> del</span>
+                    <span class="title-line">seguro de decesos</span>
+                </h1>
+                <p class="hero-description animate-in">El único proyecto de IA en seguros aprobado por la DGSFP para el espacio controlado de pruebas español.</p>
+            </div>
+            <div class="hero-aside animate-in">
+                <div class="hero-stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Disponibilidad</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Idiomas</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Supervisión humana</span>
+                </div>
+            </div>
         </div>
+        <a href="#propuesta" class="scroll-indicator">
+            <span>Descubrir</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
     </section>
 
-    <!-- Qué es el Seguro de Decesos -->
-    <section id="que-es-decesos" class="section">
+    <!-- Propuesta de valor -->
+    <section id="propuesta" class="section section-propuesta">
         <div class="container">
-            <h2>Qué es el Seguro de Decesos</h2>
-            <p class="section-intro">El seguro de decesos es una tradición española que garantiza tranquilidad familiar en los momentos más difíciles. Cubre mucho más que servicios funerarios: es una red de protección integral para toda la familia.</p>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title animate-in">Una tradición española,<br><em>reinventada</em></h2>
+            </div>
 
-            <div class="coverage-grid">
-                <div class="coverage-block">
-                    <h3>Coberturas Básicas</h3>
-                    <ul class="coverage-list">
-                        <li>
-                            <span class="coverage-title">Servicio funerario completo</span>
-                            <span class="coverage-desc">Gestión integral del servicio según las preferencias familiares</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Traslados nacionales e internacionales</span>
-                            <span class="coverage-desc">Sin límite de kilómetros en territorio nacional</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Gestión documental y administrativa</span>
-                            <span class="coverage-desc">Tramitación de certificados, pensiones y documentación</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Apoyo psicológico familiar</span>
-                            <span class="coverage-desc">Acompañamiento profesional en el proceso de duelo</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Orientación médica 24h</span>
-                            <span class="coverage-desc">Videoconsultas y segunda opinión médica</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Asesoramiento jurídico</span>
-                            <span class="coverage-desc">Orientación legal telefónica para la familia</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Gestión del legado digital</span>
-                            <span class="coverage-desc">Administración de la presencia digital del fallecido</span>
-                        </li>
-                    </ul>
+            <div class="propuesta-grid">
+                <div class="propuesta-intro animate-in">
+                    <p class="lead">El seguro de decesos es mucho más que un servicio funerario. Es una red de protección integral que acompaña a las familias en los momentos más importantes.</p>
                 </div>
 
-                <div class="coverage-block">
-                    <h3>Coberturas Opcionales</h3>
-                    <ul class="coverage-list">
-                        <li>
-                            <span class="coverage-title">Ampliación de costes funerarios</span>
-                            <span class="coverage-desc">Capital adicional para servicios premium</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Asistencia en viaje</span>
-                            <span class="coverage-desc">Cobertura mundial para imprevistos</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Protección ante accidentes</span>
-                            <span class="coverage-desc">Indemnizaciones por accidente e invalidez</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Cobertura de dependencia</span>
-                            <span class="coverage-desc">Ayuda económica en situación de dependencia</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Protección jurídica ampliada</span>
-                            <span class="coverage-desc">Defensa legal en múltiples ámbitos</span>
-                        </li>
-                        <li>
-                            <span class="coverage-title">Cobertura de mascotas</span>
-                            <span class="coverage-desc">Protección veterinaria y responsabilidad civil</span>
-                        </li>
-                    </ul>
+                <div class="coberturas-wrapper">
+                    <div class="cobertura-group animate-in">
+                        <h3>Coberturas esenciales</h3>
+                        <ul class="cobertura-list">
+                            <li>
+                                <span class="cobertura-name">Servicio funerario completo</span>
+                                <span class="cobertura-detail">Gestión integral personalizada</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Traslados sin límite</span>
+                                <span class="cobertura-detail">Nacional e internacional</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Apoyo psicológico</span>
+                                <span class="cobertura-detail">Acompañamiento en el duelo</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Gestión documental</span>
+                                <span class="cobertura-detail">Trámites y pensiones</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Orientación médica 24h</span>
+                                <span class="cobertura-detail">Videoconsultas incluidas</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Asesoramiento jurídico</span>
+                                <span class="cobertura-detail">Orientación legal familiar</span>
+                            </li>
+                            <li>
+                                <span class="cobertura-name">Legado digital</span>
+                                <span class="cobertura-detail">Gestión de presencia online</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cobertura-group cobertura-optional animate-in">
+                        <h3>Coberturas opcionales</h3>
+                        <ul class="cobertura-list">
+                            <li>Ampliación de costes funerarios</li>
+                            <li>Asistencia en viaje mundial</li>
+                            <li>Protección ante accidentes</li>
+                            <li>Cobertura de dependencia</li>
+                            <li>Protección jurídica ampliada</li>
+                            <li>Cobertura de mascotas</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Qué es DecesosIA -->
-    <section id="que-es-decesosia" class="section section-alt">
+    <!-- Tecnología -->
+    <section id="tecnologia" class="section section-tecnologia">
         <div class="container">
-            <h2>Qué es DecesosIA</h2>
-            <p class="section-intro">Un agente de inteligencia artificial diseñado para simplificar la comprensión del seguro de decesos. La tecnología al servicio de la comprensión, no de la complejidad.</p>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title animate-in">La tecnología<br><em>como puente</em></h2>
+            </div>
 
-            <div class="features-grid">
-                <div class="feature">
-                    <h4>Disponible 24/7</h4>
-                    <p>Respuestas inmediatas en cualquier momento, en más de 50 idiomas.</p>
+            <div class="tech-grid">
+                <div class="tech-main animate-in">
+                    <blockquote class="tech-quote">
+                        "La inteligencia artificial no sustituye la empatía humana. La amplifica, permitiendo que cada persona reciba la atención que merece, en el momento que la necesita."
+                    </blockquote>
                 </div>
-                <div class="feature">
-                    <h4>Supervisión humana</h4>
-                    <p>Cada conversación es revisada por profesionales. Sin decisiones automatizadas.</p>
-                </div>
-                <div class="feature">
-                    <h4>Claridad ante todo</h4>
-                    <p>Simplifica conceptos complejos del seguro de decesos de forma clara e inmediata.</p>
-                </div>
-                <div class="feature">
-                    <h4>Siempre una persona detrás</h4>
-                    <p>La inteligencia artificial asiste, pero las decisiones importantes las toman personas.</p>
+
+                <div class="tech-features">
+                    <article class="tech-feature animate-in">
+                        <h4>Siempre disponible</h4>
+                        <p>Respuestas inmediatas las 24 horas, los 7 días de la semana, en más de 50 idiomas.</p>
+                    </article>
+                    <article class="tech-feature animate-in">
+                        <h4>Supervisión humana total</h4>
+                        <p>Cada conversación es revisada por profesionales. La IA asiste, las personas deciden.</p>
+                    </article>
+                    <article class="tech-feature animate-in">
+                        <h4>Claridad radical</h4>
+                        <p>Transformamos la complejidad del seguro en información clara y accionable.</p>
+                    </article>
+                    <article class="tech-feature animate-in">
+                        <h4>Sin decisiones automatizadas</h4>
+                        <p>Ninguna decisión legal o contractual se toma sin intervención humana.</p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sandbox Financiero -->
-    <section id="sandbox" class="section">
+    <!-- Sandbox -->
+    <section id="sandbox" class="section section-sandbox">
         <div class="container">
-            <h2>Sandbox Financiero</h2>
-            <p class="section-intro">DecesosIA opera bajo el marco regulatorio del Sandbox Financiero español, garantizando los más altos estándares de supervisión y protección.</p>
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title animate-in">Supervisado por<br><em>el regulador</em></h2>
+            </div>
 
-            <div class="sandbox-info">
-                <div class="sandbox-item">
-                    <span class="sandbox-label">Autoridad supervisora</span>
-                    <span class="sandbox-value">DGSFP</span>
-                    <span class="sandbox-detail">Dirección General de Seguros y Fondos de Pensiones</span>
+            <div class="sandbox-content">
+                <div class="sandbox-info animate-in">
+                    <p class="lead">DecesosIA opera en el marco del Sandbox Financiero español, un espacio controlado de pruebas supervisado por la Dirección General de Seguros y Fondos de Pensiones.</p>
                 </div>
-                <div class="sandbox-item">
-                    <span class="sandbox-label">Marco regulatorio</span>
-                    <span class="sandbox-value">Ley 7/2020</span>
-                    <span class="sandbox-detail">Transformación digital del sector financiero</span>
-                </div>
-                <div class="sandbox-item">
-                    <span class="sandbox-label">Estado del proyecto</span>
-                    <span class="sandbox-value">Aprobado 2025</span>
-                    <span class="sandbox-detail">Único proyecto de IA en seguros seleccionado</span>
-                </div>
-                <div class="sandbox-item">
-                    <span class="sandbox-label">Protocolo publicado</span>
-                    <span class="sandbox-value">20 junio 2025</span>
-                    <span class="sandbox-detail">Supervisión continua del regulador</span>
+
+                <div class="sandbox-data">
+                    <div class="data-item animate-in">
+                        <span class="data-label">Marco legal</span>
+                        <span class="data-value">Ley 7/2020</span>
+                        <span class="data-description">Transformación digital del sector financiero</span>
+                    </div>
+                    <div class="data-item animate-in">
+                        <span class="data-label">Supervisor</span>
+                        <span class="data-value">DGSFP</span>
+                        <span class="data-description">Dirección General de Seguros y Fondos de Pensiones</span>
+                    </div>
+                    <div class="data-item animate-in">
+                        <span class="data-label">Protocolo</span>
+                        <span class="data-value">20 junio 2025</span>
+                        <span class="data-description">Fecha de publicación oficial</span>
+                    </div>
+                    <div class="data-item animate-in">
+                        <span class="data-label">Distinción</span>
+                        <span class="data-value">Único proyecto</span>
+                        <span class="data-description">De IA en seguros seleccionado para 2025</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DIU Section -->
+    <!-- DIU -->
     <section id="diu" class="section section-diu">
         <div class="container">
-            <div class="diu-header">
-                <h2>Documento Informativo para Participantes</h2>
+            <div class="diu-header animate-in">
+                <span class="section-number section-number-light">04</span>
+                <h2 class="section-title">Documento Informativo<br><em>para Participantes</em></h2>
                 <p class="diu-subtitle">Información obligatoria según normativa del Sandbox Financiero</p>
             </div>
 
-            <div class="diu-content">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Invitación a participar en la prueba</span>
+            <div class="diu-grid">
+                <div class="diu-accordion">
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Invitación a participar</span>
                             <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
                             <p>Se le invita a participar en el proyecto piloto DecesosIA, un espacio controlado de pruebas promovido por Coberio, S.L. (SegurosIA) y Coberio Broker, S.L. Este proyecto ha sido aprobado por la Dirección General de Seguros y Fondos de Pensiones en el marco del Sandbox Financiero español.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Naturaleza y duración del proyecto</span>
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Naturaleza del proyecto</span>
                             <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
-                            <p>DecesosIA es un agente basado en inteligencia artificial (tecnología LLM) diseñado para facilitar la comprensión y contratación de seguros de decesos. El proyecto piloto tiene una duración determinada según el protocolo aprobado por la DGSFP, durante la cual se evaluará su funcionamiento bajo supervisión regulatoria.</p>
+                            <p>DecesosIA es un agente basado en inteligencia artificial (tecnología LLM) diseñado para facilitar la comprensión y contratación de seguros de decesos. El proyecto piloto tiene una duración determinada según el protocolo aprobado por la DGSFP.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Riesgos asociados a la participación</span>
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Riesgos asociados</span>
                             <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
-                            <p>Como participante debe conocer que: el proyecto se encuentra en fase de pruebas y puede presentar limitaciones; la tecnología de IA puede generar respuestas inexactas; y todas las decisiones contractuales requieren validación humana. El promotor ha implementado medidas para minimizar estos riesgos.</p>
+                            <p>Como participante debe conocer que: el proyecto se encuentra en fase de pruebas y puede presentar limitaciones; la tecnología de IA puede generar respuestas inexactas; y todas las decisiones contractuales requieren validación humana.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Responsabilidades del promotor</span>
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Garantías y coberturas</span>
                             <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
-                            <p>Coberio, S.L. y Coberio Broker, S.L. son responsables del correcto funcionamiento del proyecto, la supervisión de todas las interacciones, la protección de los datos personales y el cumplimiento del protocolo aprobado por la DGSFP.</p>
+                            <p>Los participantes están protegidos por un seguro de responsabilidad civil contratado con CGPA Europe, que cubre los posibles perjuicios derivados de la participación en el proyecto piloto.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Garantías y coberturas</span>
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Derecho de desistimiento</span>
                             <span class="accordion-icon"></span>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Los participantes están protegidos por un seguro de responsabilidad civil contratado con CGPA Europe, que cubre los posibles perjuicios derivados de la participación en el proyecto piloto, conforme a los requisitos establecidos por la normativa del Sandbox.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Derecho de desistimiento</span>
-                            <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
                             <p>Puede abandonar el proyecto en cualquier momento sin necesidad de justificación y sin penalización alguna. Para ejercer este derecho, contacte con nosotros a través de los canales indicados.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Protección de datos personales</span>
+                    <details class="accordion-item animate-in">
+                        <summary>
+                            <span class="accordion-title">Protección de datos</span>
                             <span class="accordion-icon"></span>
-                        </button>
+                        </summary>
                         <div class="accordion-content">
-                            <p>Sus datos personales serán tratados conforme al Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos. Tiene derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición al tratamiento de sus datos.</p>
+                            <p>Sus datos personales serán tratados conforme al RGPD y la LOPD. Tiene derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición al tratamiento de sus datos.</p>
                         </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Confidencialidad</span>
-                            <span class="accordion-icon"></span>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Toda la información intercambiada durante su participación será tratada con estricta confidencialidad. El promotor se compromete a no divulgar información personal a terceros no autorizados.</p>
-                        </div>
-                    </div>
+                    </details>
                 </div>
 
-                <div class="diu-download">
-                    <a href="docs/DIU-DecesosIA.pdf" class="btn-download" download>Descargar DIU completo</a>
-                </div>
+                <div class="diu-sidebar animate-in">
+                    <div class="diu-download">
+                        <p>Descargue el documento completo con toda la información detallada sobre su participación.</p>
+                        <a href="docs/DIU-DecesosIA.pdf" class="btn-download" download>
+                            <span>Descargar DIU</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                        </a>
+                    </div>
 
-                <div class="diu-contact">
-                    <h4>Contacto</h4>
-                    <p>Para cualquier consulta relacionada con su participación:</p>
-                    <div class="contact-info">
-                        <a href="mailto:hola@coberio.com">hola@coberio.com</a>
-                        <a href="tel:+34680837887">+34 680 837 887</a>
+                    <div class="diu-contact">
+                        <h4>Contacto</h4>
+                        <p>Para cualquier consulta:</p>
+                        <a href="mailto:hola@coberio.com" class="contact-link">hola@coberio.com</a>
+                        <a href="tel:+34680837887" class="contact-link">+34 680 837 887</a>
                     </div>
                 </div>
             </div>
@@ -281,28 +306,27 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <span class="footer-logo">DecesosIA</span>
-                    <p>Inteligencia Artificial al servicio del seguro de decesos</p>
+                    <span class="footer-logo">Decesos<em>IA</em></span>
+                    <p>El futuro del seguro de decesos, supervisado por el regulador.</p>
                 </div>
 
-                <div class="footer-info">
-                    <div class="footer-block">
+                <div class="footer-links">
+                    <div class="footer-col">
                         <h5>Promotores</h5>
                         <p>Coberio, S.L. (SegurosIA)</p>
                         <p>Coberio Broker, S.L.</p>
                     </div>
-
-                    <div class="footer-block">
+                    <div class="footer-col">
                         <h5>Supervisión</h5>
-                        <p>Dirección General de Seguros<br>y Fondos de Pensiones (DGSFP)</p>
+                        <p>DGSFP</p>
+                        <p>Sandbox Financiero 2025</p>
                     </div>
-
-                    <div class="footer-block">
+                    <div class="footer-col">
                         <h5>Legal</h5>
-                        <a href="#diu">Documento Informativo (DIU)</a>
-                        <a href="privacidad.html">Política de privacidad</a>
+                        <a href="#diu">Documento DIU</a>
+                        <a href="privacidad.html">Privacidad</a>
                         <a href="aviso-legal.html">Aviso legal</a>
                     </div>
                 </div>
