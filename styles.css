@@ -548,39 +548,6 @@ em {
     gap: 16px;
 }
 
-.diu-download {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.diu-download p {
-    font-size: 15px;
-    color: var(--gray);
-    margin-bottom: 16px;
-}
-
-.btn-download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    background: white;
-    color: var(--black);
-    padding: 14px 20px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    min-height: 48px;
-    -webkit-tap-highlight-color: transparent;
-    transition: opacity 0.2s;
-}
-
-.btn-download:active {
-    opacity: 0.7;
-}
-
 .diu-contact {
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
