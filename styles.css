@@ -570,12 +570,19 @@ em {
 }
 
 .contact-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: white;
     font-size: 17px;
     padding: 12px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     -webkit-tap-highlight-color: transparent;
+}
+
+.contact-link svg {
+    flex-shrink: 0;
+    color: var(--gray);
 }
 
 .contact-link:last-child {
