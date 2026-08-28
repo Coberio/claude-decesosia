@@ -680,6 +680,13 @@ em {
     margin-top: 0;
 }
 
+.legal-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: var(--space-sm);
+    margin-bottom: 8px;
+}
+
 .legal-content ul {
     padding-left: 20px;
     margin-bottom: 16px;
