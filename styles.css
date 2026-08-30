@@ -597,47 +597,6 @@ em {
     margin-top: 10px;
 }
 
-.diu-contact {
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-}
-
-.diu-contact h4 {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--gray);
-    margin-bottom: 8px;
-}
-
-.diu-contact > p {
-    font-size: 15px;
-    color: var(--gray);
-    margin-bottom: 16px;
-}
-
-.contact-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-size: 17px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    -webkit-tap-highlight-color: transparent;
-}
-
-.contact-link svg {
-    flex-shrink: 0;
-    color: var(--gray);
-}
-
-.contact-link:last-child {
-    border-bottom: none;
-}
-
 /* Álex / WhatsApp Section */
 .section-alex {
     background: var(--white);
