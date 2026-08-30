@@ -48,14 +48,15 @@ copied verbatim rather than paraphrased.
 
 ## Key Sections
 
-Numbered sections on `index.html` (the `01`–`05` labels are `.section-number`):
+Numbered sections on `index.html` (the `01`–`06` labels are `.section-number`):
 
-- **Hero** - Main value proposition with key stats (unnumbered)
+- **Hero** - Main value proposition, "Participar en el piloto" CTA, key stats (unnumbered)
 - **01 Propuesta** - Insurance coverage details
 - **02 Tecnología** - AI capabilities explanation
 - **03 Sandbox** - Regulatory framework information
-- **04 DIU** - Mandatory participant information (accordion + PDF download + contact)
-- **05 Álex** - WhatsApp entry point to the AI agent
+- **04 Participar** - Tally form embed (`#participar`)
+- **05 DIU** - Mandatory participant information (accordion + PDF download)
+- **06 Álex** - WhatsApp entry point to the AI agent
 
 Adding or reordering a section means updating its `.section-number`, the nav links
 (desktop `.nav-links` and `.mobile-menu` are two separate lists), and this file.
@@ -71,3 +72,9 @@ Adding or reordering a section means updating its `.section-number`, the nav lin
   (`hola@coberio.com`, `dpo@coberio.com`, `+34 680 837 887`) exactly as the client's texts specify.
 - **Source documents:** `Documentos DecesosIA/` holds client originals (`.docx`, product PDFs)
   and is untracked working material, not published content.
+- **Participation form:** section 04 embeds Tally form `7RkXoZ` with the official
+  `data-tally-src` iframe plus `https://tally.so/widgets/embed.js`, loaded once at the end of
+  `index.html`. Do not rebuild the fields locally and never put a Tally API key in the frontend —
+  only the public form ID belongs here. The field copy, the two required consent checkboxes and
+  the confirmation flow are edited in Tally, not in this repo. If `embed.js` fails, the inline
+  script reveals `#participar-fallback`, which links to `https://tally.so/r/7RkXoZ`.

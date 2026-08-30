@@ -26,7 +26,9 @@
         });
     }
 
-    // Smooth scroll for anchor links
+    // Smooth scroll for anchor links (respects prefers-reduced-motion)
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -40,7 +42,7 @@
 
                 window.scrollTo({
                     top: targetPosition,
-                    behavior: 'smooth'
+                    behavior: reducedMotion.matches ? 'auto' : 'smooth'
                 });
             }
         });
