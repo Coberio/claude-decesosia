@@ -548,6 +548,55 @@ em {
     gap: 16px;
 }
 
+.diu-download {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+.diu-download h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.diu-download > p {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: white;
+    color: var(--black);
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.2s;
+}
+
+.btn-download:active {
+    opacity: 0.7;
+}
+
+.btn-download-meta {
+    font-size: 13px;
+    color: var(--gray);
+    text-align: center;
+    margin-top: 10px;
+}
+
 .diu-contact {
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -587,6 +636,64 @@ em {
 
 .contact-link:last-child {
     border-bottom: none;
+}
+
+/* Álex / WhatsApp Section */
+.section-alex {
+    background: var(--white);
+    border-top: 1px solid var(--gray-light);
+}
+
+.alex-inner {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.alex-inner h2 {
+    margin-bottom: 16px;
+}
+
+.alex-inner em {
+    color: var(--gray);
+}
+
+.alex-subtitle {
+    font-size: 17px;
+    color: var(--gray-dark);
+    margin-bottom: var(--space-md);
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--black);
+    color: white;
+    padding: 18px 32px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    min-height: 56px;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.2s;
+}
+
+.btn-whatsapp:active {
+    opacity: 0.75;
+}
+
+.btn-whatsapp svg {
+    flex-shrink: 0;
+}
+
+.alex-note {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--gray);
+    margin-top: var(--space-md);
 }
 
 /* Footer */
