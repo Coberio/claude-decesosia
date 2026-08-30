@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 DecesosIA is a static website for an AI-powered burial insurance project approved for the Spanish Financial Sandbox 2025. The site targets C-Level executives at insurance companies and the DGSFP (regulatory body).
 
-**Live site:** https://coberio.github.io/claude-decesosia/
+**Live site:** https://decesosia.com (custom domain via `CNAME`, served from GitHub Pages)
 
 ## Development
 
@@ -29,9 +29,14 @@ styles.css       # Mobile-first CSS (system fonts, Apple-style)
 script.js        # Mobile menu toggle and smooth scroll
 privacidad.html  # Privacy policy page
 aviso-legal.html # Legal notice page
-docs/            # PDF documents (DIU download)
+cookies.html     # Cookie policy page
+docs/            # DIU-DecesosIA.pdf (public download)
 referencias/     # Reference screenshots for design review
 ```
+
+The three legal pages share the same layout (`.legal-page` / `.legal-content`) and
+carry no publication date — the texts are supplied by the client and should be
+copied verbatim rather than paraphrased.
 
 ## Design Guidelines
 
@@ -43,12 +48,26 @@ referencias/     # Reference screenshots for design review
 
 ## Key Sections
 
-1. **Hero** - Main value proposition with key stats
-2. **Propuesta** - Insurance coverage details
-3. **Tecnología** - AI capabilities explanation
-4. **Sandbox** - Regulatory framework information
-5. **DIU** - Mandatory participant information (accordion + download)
+Numbered sections on `index.html` (the `01`–`05` labels are `.section-number`):
 
-## Pending Task
+- **Hero** - Main value proposition with key stats (unnumbered)
+- **01 Propuesta** - Insurance coverage details
+- **02 Tecnología** - AI capabilities explanation
+- **03 Sandbox** - Regulatory framework information
+- **04 DIU** - Mandatory participant information (accordion + PDF download + contact)
+- **05 Álex** - WhatsApp entry point to the AI agent
 
-Add `DIU-DecesosIA.pdf` to the `docs/` folder. Convert from the source `.docx` file.
+Adding or reordering a section means updating its `.section-number`, the nav links
+(desktop `.nav-links` and `.mobile-menu` are two separate lists), and this file.
+
+## Conventions
+
+- **DIU download:** the file is served as `docs/DIU-DecesosIA.pdf` (ASCII path, since
+  spaces and accents in URLs break on GitHub Pages). The `download` attribute renames it
+  to `DOCUMENTO INFORMATIVO ÚNICO (DIU) - DECESOSIA.pdf` on the user's machine — keep both
+  in sync if the document is replaced.
+- **Contact details:** `alex@decesosia.com` and WhatsApp `+34 646 859 183` (`wa.me/34646859183`)
+  are the public-facing channels. The legal pages instead use the corporate contacts
+  (`hola@coberio.com`, `dpo@coberio.com`, `+34 680 837 887`) exactly as the client's texts specify.
+- **Source documents:** `Documentos DecesosIA/` holds client originals (`.docx`, product PDFs)
+  and is untracked working material, not published content.
