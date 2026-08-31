@@ -48,7 +48,7 @@ copied verbatim rather than paraphrased.
 
 ## Key Sections
 
-Numbered sections on `index.html` (the `01`–`06` labels are `.section-number`):
+Numbered sections on `index.html` (the `01`–`05` labels are `.section-number`):
 
 - **Hero** - Main value proposition, "Participar en el piloto" CTA, key stats (unnumbered)
 - **01 Propuesta** - Insurance coverage details
@@ -56,7 +56,12 @@ Numbered sections on `index.html` (the `01`–`06` labels are `.section-number`)
 - **03 Sandbox** - Regulatory framework information
 - **04 Participar** - Tally form embed (`#participar`)
 - **05 DIU** - Mandatory participant information (accordion + PDF download)
-- **06 Álex** - WhatsApp entry point to the AI agent
+
+The site deliberately has **no direct WhatsApp entry point**. Contacting Álex before
+signing the DIU would let users interact with the AI agent outside the Sandbox
+protocol, so the form is the only route in: the user picks WhatsApp or a phone call
+inside Tally, and contact happens only once the DIU is signed. Do not add a
+`wa.me` link back to the landing page.
 
 Adding or reordering a section means updating its `.section-number`, the nav links
 (desktop `.nav-links` and `.mobile-menu` are two separate lists), and this file.
@@ -67,9 +72,9 @@ Adding or reordering a section means updating its `.section-number`, the nav lin
   spaces and accents in URLs break on GitHub Pages). The `download` attribute renames it
   to `DOCUMENTO INFORMATIVO ÚNICO (DIU) - DECESOSIA.pdf` on the user's machine — keep both
   in sync if the document is replaced.
-- **Contact details:** `alex@decesosia.com` and WhatsApp `+34 646 859 183` (`wa.me/34646859183`)
-  are the public-facing channels. The legal pages instead use the corporate contacts
-  (`hola@coberio.com`, `dpo@coberio.com`, `+34 680 837 887`) exactly as the client's texts specify.
+- **Contact details:** the legal pages use the corporate contacts (`hola@coberio.com`,
+  `dpo@coberio.com`, `+34 680 837 887`) exactly as the client's texts specify. The landing
+  page itself exposes no contact channel — participation goes through the Tally form.
 - **Source documents:** `Documentos DecesosIA/` holds client originals (`.docx`, product PDFs)
   and is untracked working material, not published content.
 - **Participation form:** section 04 embeds Tally form `7RkXoZ` with the official
