@@ -54,8 +54,11 @@ Numbered sections on `index.html` (the `01`–`05` labels are `.section-number`)
 - **01 Propuesta** - Insurance coverage details
 - **02 Tecnología** - AI capabilities explanation
 - **03 Sandbox** - Regulatory framework information
-- **04 Participar** - Tally form embed (`#participar`)
-- **05 DIU** - Mandatory participant information (accordion + PDF download)
+- **04 DIU** - Mandatory participant information (accordion + PDF download)
+- **05 Participar** - Tally form embed (`#participar`)
+
+The DIU deliberately comes **before** the form: the user should read the mandatory
+information and download the document before submitting their details.
 
 The site deliberately has **no direct WhatsApp entry point**. Contacting Álex before
 signing the DIU would let users interact with the AI agent outside the Sandbox
